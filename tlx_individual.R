@@ -108,7 +108,7 @@ tlx.individual = function (collectedData, participantID) {
     scale_y_continuous(limits = c(0, 100), breaks = c(0, 20, 40, 60, 80, 100), expand = c(0,0)) +
     scale_fill_manual("TLX Factors", values = factorCP) +
     labs(x="IMPORTANCE WEIGHT", y="RATING") +
-    ggtitle(paste("OVERALL WORKLOAD (OW) = MEAN OF WEIGHTED RATINGS \n Participant ID:", participantID, sep = " ")) +
+    ggtitle(paste("OVERALL WORKLOAD (OW) = MEAN OF WEIGHTED RATINGS \n", participantID, sep = " ")) +
     theme(axis.line = element_line(size = 0.4, color = "black"),
           axis.ticks.y = element_line(size = 0.4, color = "black"),
           axis.ticks.x = element_blank(),
